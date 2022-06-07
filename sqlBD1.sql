@@ -31,8 +31,7 @@ CREATE TABLE ENDERECO(
     numero INTEGER,
     cpf_pessoa CHAR(11),
     PRIMARY KEY(cidade, cpf_pessoa),
-    FOREIGN KEY(cpf_pessoa) REFERENCES PESSOA(cpf) ON DELETE CASCADE,
-    UNIQUE(cpf_pessoa)
+    FOREIGN KEY(cpf_pessoa) REFERENCES PESSOA(cpf) ON DELETE CASCADE
 );
 
 CREATE TABLE Tempo_de_Trabalho(
